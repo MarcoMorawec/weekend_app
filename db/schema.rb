@@ -11,6 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20130906141229) do
+
+  create_table "pins", :force => true do |t|
+    t.string   "emotion"
+    t.string   "learned_1"
+    t.string   "learned_2"
+    t.string   "learned_3"
+    t.integer  "hour"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end
