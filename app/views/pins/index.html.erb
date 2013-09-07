@@ -1,0 +1,19 @@
+<h2>How I Built my First Web Application</h2>
+
+<% @pin.each do |pins| %>
+
+	<p>Hour <%= pins.hour %></p>
+	<p>
+		<h3>What I learned</h3>
+		<ul>
+			<li><%= pins.learned_1 %></li>
+			<li><%= pins.learned_2 %></li>
+			<li><%= pins.learned_3 %></li>
+		</ul>
+	<h3>How I feel:</h3>
+		<p><%= pins.emotion %></p>
+
+<% end %>
+
+<p><%= link_to('Add Pin', new_pin_path) %></p>
+

@@ -1,0 +1,12 @@
+<h3>Ad a new image of yourself</h3>
+
+
+<%= simple_form_for @pin, :url => {:action => 'create'}, :method => 'post', :html => {:class => 'form-horizontal'} do |f| %>
+
+	<%= f.input :emotion, :label => 'How do you feel right now' %>
+
+
+	<%= f.button :submit, :value => 'Create Pin' %>
+
+<% end %>
+
