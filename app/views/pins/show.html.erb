@@ -1,6 +1,7 @@
 <h3>How are you really feeling?</h3>
 
 <p>Hour: <%= @pin.hour %> </p>
+<p><%= image_tag(@pin.pin_image_url(:show_pin).to_s) %></p>
 <p>What you learned: <%= @pin.learned %> </p>
 <p>Your mood: <%= @pin.emotion %> </p>
 
