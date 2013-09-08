@@ -4,7 +4,9 @@
 <p>What you learned: <%= @pin.learned %> </p>
 <p>Your mood: <%= @pin.emotion %> </p>
 
-<%= link_to('Edit Pin', edit_pin_path) %>
+<%= link_to("Edit Pin", edit_pin_path) %>
+<%= link_to("Delete Pin", {:action => 'destroy', :id => @pin.id}, confirm: "Are you sure?") %>
+
 
 
 <%= link_to 'back to pins', pins_path %>
