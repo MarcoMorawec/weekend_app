@@ -1,7 +1,9 @@
 <h3>How are you really feeling?</h3>
 
-
+<p>What you learned: <%= @pin.learned %> </p>
 <p>Your mood: <%= @pin.emotion %> </p>
+
+<%= link_to('Edit Pin', edit_pin_path) %>
 
 
 <%= link_to 'back to pins', pins_path %>

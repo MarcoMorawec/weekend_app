@@ -14,7 +14,6 @@ class PinsController < ApplicationController
 
 	def create
 		@pin = Pin.create(params[:pin])
-			print "hello"
 			if @pin.save
 				redirect_to @pin
 			else
@@ -23,17 +22,22 @@ class PinsController < ApplicationController
 	end
 
 	def edit
-
+		@pin = Pin.find(params[:id])
 	end
 
 	def update
-
+		@pin = Pin.update_attributes(params[:pin])
+			if Pin.save
+				redirect_to @pin
+			else
+				render 'edit'
+			end
 	end
 
 
 	def destroy
-		@pin = Pin.find(params[:id]).delete
-			redirect_to pins_path
+		@pin = Pin.find(params[:id]).destroy
+		redirect_to(:action => "index")
 	end
 
 end

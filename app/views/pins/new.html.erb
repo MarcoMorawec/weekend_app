@@ -2,7 +2,9 @@
 
 
 <%= simple_form_for @pin, :url => {:action => 'create'}, :method => 'post', :html => {:class => 'form-horizontal'} do |f| %>
-
+	
+	<%= f.input :hour, :label => 'Which Hour is this for?' %>
+	<%= f.input :learned, :label => 'Add three things that you learned' %>
 	<%= f.input :emotion, :label => 'How do you feel right now' %>
 
 
