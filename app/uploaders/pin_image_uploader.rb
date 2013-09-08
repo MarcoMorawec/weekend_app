@@ -38,11 +38,11 @@ class PinImageUploader < CarrierWave::Uploader::Base
   #  end
 
   version :index_pin do
-      process :resize_to_limit => [150, 150]
+      process :resize_to_limit => [300, 300]
    end
 
   version :show_pin do
-      process :resize_to_limit => [250, 250]
+      process :resize_to_limit => [500, 500]
    end  
 
   # Add a white list of extensions which are allowed to be uploaded.
