@@ -6,6 +6,7 @@
 	<div class="span4">
 		<h3>Hour <%= pins.hour %></h3>
 		<p>
+	<div class="js-masonry" data-masonry-options='{ "itemSelector": ".item", "columnWidth": 200 }'>		
 		<div class="box">
 			<div class="img-wrap">
 				<p><%= image_tag(pins.pin_image_url(:index_pin).to_s, :class => '') %> </p>
@@ -21,6 +22,7 @@
 				<%= link_to 'Show Pin', {:action => 'show', :id => pins.id}  %>
 			</p>			
 		</div>
+	</div>
 	</div>
 <% end %>
 
