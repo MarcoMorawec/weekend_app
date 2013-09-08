@@ -26,8 +26,8 @@ class PinsController < ApplicationController
 	end
 
 	def update
-		@pin = Pin.update_attributes(params[:pin])
-			if Pin.save
+		@pin = Pin.find(params[:id])
+			if @pin.update_attributes(params[:pin])
 				redirect_to @pin
 			else
 				render 'edit'
