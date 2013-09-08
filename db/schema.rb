@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130908125751) do
+ActiveRecord::Schema.define(:version => 20130908201423) do
 
   create_table "pins", :force => true do |t|
     t.string   "emotion"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20130908125751) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.text     "learned"
+    t.string   "pin_image"
   end
 
 end

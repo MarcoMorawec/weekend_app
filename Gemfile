@@ -30,6 +30,10 @@ gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 
+#for image uploading
+gem 'rmagick'
+gem 'carrierwave'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

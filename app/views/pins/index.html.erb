@@ -5,9 +5,10 @@
 	<p>Hour <%= pins.hour %></p>
 	<p>
 		<h3>What I learned</h3>
-		<ul>
-			<li><%= pins.learned %></li>
-		</ul>
+		
+			<p><%= pins.learned %></p>
+		<p><%= image_tag(pins.pin_image_url(:index_pin).to_s, :class => 'index_pin') %> </p>
+		
 	<h3>How I feel:</h3>
 		<p><%= pins.emotion %></p>
 	<h4>Actions:</h4>
