@@ -34,10 +34,11 @@ class PinsController < ApplicationController
 			end
 	end
 
-
 	def destroy
 		@pin = Pin.find(params[:id]).destroy
 		redirect_to(:action => "index")
 	end
+
+
 
 end
