@@ -1,5 +1,10 @@
 // All the master styles for the entire app go here
 
+// different backgrounds go here
+
+.about-background {
+	background: url('http://farm1.staticflickr.com/126/387606063_408c203f6c_o.jpg');
+}
 
 //Font types go here:
 
@@ -12,4 +17,8 @@
 .headline {
 	font-family: 'Cabin Sketch', cursive;
 	font-size: 54px;
+}
+
+.about-font {
+	color: white;
 }
