@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<section class="<%= @backgroundpage %>-background">
 
 <div class="navbar">
 	<div class="navbar-inner">
@@ -41,12 +42,12 @@
 				</ul>
 			<!-- .nav, .navbar-search, .navbar-form, etc -->
 			</div>
-		 
 		</div>
 	</div>
-</div>	
+</div>
 
-<%= yield %>
-
+	<%= yield %>
+	
+</section> <!-- Background end -->
 </body>
 </html>

@@ -2,6 +2,7 @@ class PinsController < ApplicationController
 
 
 	def index
+		@backgroundpage = 'main'
 		@pin = Pin.order("hour ASC")
 	end
 
