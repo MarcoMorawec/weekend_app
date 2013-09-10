@@ -1,5 +1,6 @@
 class PinsController < ApplicationController
 
+
 	def index
 		@pin = Pin.order("hour ASC")
 	end
