@@ -1,11 +1,11 @@
-<h3>Edit your image</h3>
-
-
-<%= simple_form_for @pin, :url => {:action => 'update'}, :html => {:class => 'form-horizontal'} do |f| %>
-	
-	<%= render(:partial => 'pin_form', :locals => {:f => f}) %>
-
-	<%= f.button :submit, :value => 'Update Pin' %>
-
-<% end %>
-
+<div class="span6 offset3">
+	<div class="signup-box">
+		<h3>Edit your image</h3>
+		<%= simple_form_for @pin, :url => {:action => 'update'}, :html => {:class => ''} do |f| %>
+			
+				<%= render(:partial => 'pin_form', :locals => {:f => f}) %>
+			</br>
+				<%= f.button :submit, :value => 'Update Pin', :class => 'btn btn-primary' %>
+		<% end %>
+	</div>
+</div>

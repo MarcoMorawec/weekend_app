@@ -19,13 +19,13 @@
 			</a>
 			 
 			<!-- Be sure to leave the brand out there if you want it shown -->
-			<a class="brand" href="#">Web Dev Apprentice</a>
+			<%= link_to("Web Dev Apprentice", root_path, :class => 'brand') %>
 			 
 			<!-- Everything you want hidden at 940px or less, place within here -->
 			<div class="nav-collapse collapse">
 				<ul class="nav">
 					<li>
-						<%= link_to('About Me' ) %>
+						<%= link_to('About Me') %>
 					</li>
 					<li>
 						<%= link_to('Link 2') %>
@@ -34,7 +34,13 @@
 				<ul class="nav pull-right">
 					<li>
 						<%= link_to('Sign In', :class => '') %>						
-					</li>				
+					</li>
+					<% if %>
+						<%= link_to("Add Pin", new_pin_path, :class => 'btn btn-success') %>
+						<li>
+							<%= link_to('Sign Out') %>
+						</li>
+					<% end %>	
 				</ul>
 			<!-- .nav, .navbar-search, .navbar-form, etc -->
 			</div>
@@ -42,10 +48,8 @@
 		</div>
 	</div>
 </div>	
-<div class="container">
 
 <%= yield %>
 
-</div>
 </body>
 </html>

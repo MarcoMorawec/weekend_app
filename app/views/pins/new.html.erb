@@ -1,11 +1,15 @@
-<h3>Ad a new image of yourself</h3>
+<div class="span6 offset3">
+	<div class="signup-box">
 
+		<h3>Add a new image of yourself</h3>
 
-<%= simple_form_for @pin, :url => {:action => 'create'}, :method => 'post', :html => {:class => 'form-horizontal'} do |f| %>
-	
-	<%= render(:partial => 'pin_form', :locals => {:f => f}) %>
+		<%= simple_form_for @pin, :url => {:action => 'create'}, :method => 'post', :html => {:class => ''} do |f| %>
+			
+				<%= render(:partial => 'pin_form', :locals => {:f => f}) %>
+			</br>
+				<%= f.button :submit, :value => 'Add Image', :class => 'btn btn-primary' %>	
 
-	<%= f.button :submit, :value => 'Create Pin' %>	
-
-<% end %>
+		<% end %>
+	</div>
+</div>
 
