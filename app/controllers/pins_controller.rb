@@ -37,8 +37,8 @@ class PinsController < ApplicationController
 	end
 
 	def destroy
-		@pin = Pin.find(params[:id]).destroy
-		redirect_to(:action => "index")
+		Pin.find(params[:id]).destroy
+		redirect_to(:action => 'index')
 	end
 
 
