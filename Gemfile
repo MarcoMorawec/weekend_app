@@ -34,6 +34,9 @@ gem 'twitter-bootstrap-rails'
 gem 'rmagick'
 gem 'carrierwave'
 
+#Amazon S3 uploading
+gem 'fog'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
