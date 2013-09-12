@@ -5,7 +5,7 @@ WeekendApp::Application.routes.draw do
   resources :pins 
   resources :about
 
-  root :to => 'pins#index'
+  root :to => 'about#index'
 
 
   # Sample of regular route:
